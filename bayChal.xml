@@ -97,7 +97,17 @@
                                   </block>
                                 </value>
                                 <statement name="DO0">
-                                  <block type="movement_left" id="400"></block>
+                                  <block type="movement_left" id="400">
+                                    <next>
+                                      <block type="robot_delay" id="674" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="687">
+                                            <field name="NUM">100</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
                                 </statement>
                                 <value name="IF1">
                                   <block type="logic_compare" id="494" inline="true">
@@ -118,7 +128,17 @@
                                   <block type="movement_right" id="536"></block>
                                 </statement>
                                 <statement name="ELSE">
-                                  <block type="movement_forward" id="546"></block>
+                                  <block type="movement_forward" id="546">
+                                    <next>
+                                      <block type="robot_delay" id="628" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="641">
+                                            <field name="NUM">400</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
                                 </statement>
                                 <next>
                                   <block type="robot_delay" id="56" inline="true">
